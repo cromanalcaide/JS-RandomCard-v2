@@ -23,5 +23,11 @@ window.onload = function() {
 
   let suitInCard = document.createElement("p");
   suitInCard.innerText = suits[suit];
+  if (suitInCard === "♥" && "♦") {
+    suitInCard.classList.add("red");
+  } else {
+    suitInCard.classList.add("black");
+  }
   console.log(suits[suit], numbers[number]);
+  document.querySelector(".header", ".bottom").appendChild(suitInCard);
 };
