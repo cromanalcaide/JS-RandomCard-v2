@@ -1,20 +1,26 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  background-color: rgb(190, 120, 120);
+  background-color: #e1c391;
 }
 
 .cardBg {
   width: 350px;
   height: 550px;
   border-radius: 10px;
+  background-color: #705446;
 }
 
 .header {
+  height: 120px;
+  color: #e1c391;
 }
 
 .center {
+  color: #e1c391;
 }
 
 .bottom {
+  height: 120px;
+  color: #e1c391;
 }

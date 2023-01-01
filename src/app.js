@@ -1,4 +1,5 @@
-/* eslint-disable */
+import "bootstrap";
+import "./style.css";
 
 window.onload = function() {
   //write your code here
@@ -23,11 +24,15 @@ window.onload = function() {
 
   let suitInCard = document.createElement("p");
   suitInCard.innerText = suits[suit];
-  if (suitInCard === "♥" && "♦") {
-    suitInCard.classList.add("red");
+  if (suitInCard === "♥" || "♦") {
+    suitInCard.classList.add(".text-danger");
   } else {
-    suitInCard.classList.add("black");
+    suitInCard.classList.add(".text-body");
   }
-  console.log(suits[suit], numbers[number]);
-  document.querySelector(".header", ".bottom").appendChild(suitInCard);
+  document.querySelector(".header").appendChild(suitInCard);
+  //document.querySelector(".bottom").appendChild(suitInCard);
+
+  let numberInCard = document.createElement("p");
+  numberInCard.innerText = numbers[number];
+  document.querySelector(".center").appendChild(numberInCard);
 };
