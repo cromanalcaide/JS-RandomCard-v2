@@ -29,7 +29,7 @@ window.onload = function() {
   } else {
     suitInCard.classList.add("text-body");
   }
-  let suitInCard2 = suitInCard;
+  //let suitInCard2 = suitInCard;
 
   document.querySelector(".header").appendChild(suitInCard);
   //document.querySelector(".bottom").appendChild(suitInCard2);
