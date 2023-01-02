@@ -2,7 +2,6 @@ import "bootstrap";
 import "./style.css";
 
 window.onload = function() {
-  //write your code here
   let suits = ["♦", "♥", "♠", "♣"];
   let numbers = [
     "2",
@@ -26,14 +25,14 @@ window.onload = function() {
   let randomSuit = suits[suit];
   suitInCard.innerText = randomSuit;
   if (randomSuit === "♥" || randomSuit === "♦") {
-    suitInCard.classList.add("text-danger");
+    suitInCard.classList.add("text-white");
   } else {
     suitInCard.classList.add("text-body");
   }
   let suitInCard2 = suitInCard;
 
   document.querySelector(".header").appendChild(suitInCard);
-  //document.querySelector(".bottom").appendChild(suitInCard2); --> Por qué no aparece el palo en la parte inferior?
+  //document.querySelector(".bottom").appendChild(suitInCard2);
 
   let numberInCard = document.createElement("p");
   numberInCard.innerText = numbers[number];
