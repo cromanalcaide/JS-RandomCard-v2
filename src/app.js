@@ -34,6 +34,8 @@ window.onload = function() {
   document.querySelector(".header").appendChild(suitInCard);
   //document.querySelector(".bottom").appendChild(suitInCard2);
 
+  // solución: https://stackoverflow.com/questions/2594578/one-document-createelement-append-it-twice-only-shows-once
+
   let numberInCard = document.createElement("p");
   numberInCard.innerText = numbers[number];
   document.querySelector(".center").appendChild(numberInCard);
